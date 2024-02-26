@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --primary: #e8604c;
+}
+
+@font-face {
+    font-family: 'Reey';
+    src: url('../fonts/reey-regular-webfont.woff2') format('woff2'),
+        url('../fonts/reey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper .swiper-wrapper .swiper-slide .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.swiper .swiper-wrapper .swiper-slide .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Reey', sans-serif;
+    color: var(--primary) !important;
+    word-spacing: 2rem;
+}
+
+.swiper .swiper-wrapper .swiper-slide .content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 14px !important;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 10px !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary) !important;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card.card-destination {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card.card-destination:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card.card-destination img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.page-header,
+.page-header__top {
+    position: relative;
+    display: block;
+}
+
+.page-header__top {
+    padding: 104px 0;
+}
+
+.page-header-bg,
+.page-header-bg-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.page-header-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    filter: grayscale(100%);
+}
+
+.page-header-bg-overly {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-header__top-inner {
+    position: relative;
+    display: block;
+    color: #fff;
+}
+
+.card.card-product {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card.card-product:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card.card-product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.card.card-product .card-body .product-price {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.img-gallery {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.navbar .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card.card-discussion {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card.card-discussion:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
